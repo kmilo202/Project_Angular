@@ -1,0 +1,27 @@
+<h1 class="page-header">Project Lista de Productos</h1>
+
+<h2 class="section-subtitle">Productos Disponibles</h2>
+<a [routerLink]="['/cart']">Carrito</a>
+<input type="number" placeholder="Enter product id" name="productId" [(ngModel)]="id">
+<button type="button" class="btn btn-primary" (click)="getProductById()">Search</button>
+<div class="product-list">
+    <div *ngFor="let product of productList" class="product-item">
+        <img [src]="product.image" alt="{{product.title}}">
+        <h1>{{product.title}}</h1>
+        <div class="product-description">
+            <p>{{product.description}}</p>
+        </div>
+        <h6>${{product.price}}</h6>
+        <button type="button" class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+    </div>
+</div>
+
+
+
+<div *ngIf="findedProduct">
+    <div style="width: 50px; height: 50px; background-color: coral;">
+        <h1>{{findedProduct.title}}</h1>
+        <p>{{findedProduct.description}}</p>
+        <h6>${{findedProduct.price}}</h6>
+    </div>
+</div>

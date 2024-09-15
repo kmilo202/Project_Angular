@@ -1,0 +1,7 @@
+<h1>Checkout</h1>
+<div *ngFor="let item of items">
+    <h2 class="item-title">{{item.title}}</h2>
+    <h6 class="item-price">{{item.price}}</h6>
+</div>
+<a [routerLink]="['/home']">SeguirComprando</a>
+

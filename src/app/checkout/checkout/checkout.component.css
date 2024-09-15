@@ -1,0 +1,16 @@
+/* Estilos para el encabezado h2 */
+.item-title {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para el encabezado h6 */
+.item-price {
+    font-size: 18px; /* Tamaño de fuente más pequeño */
+    color: #e74c3c; /* Color del precio */
+    margin-top: 5px; /* Espacio arriba del precio */
+    text-align: center; /* Centra el texto */
+}
